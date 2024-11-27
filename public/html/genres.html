@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Gêneros</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciar Gêneros</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/html/artists.html" class="nav-btn">Artistas</a>
+      <a href="/html/albums.html" class="nav-btn">Álbuns</a>
+      <a href="/html/tracks.html" class="nav-btn">Faixas</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-container">
+      <section>
+        <h2>Lista de Gêneros</h2>
+        <ul id="genre-list"></ul>
+      </section>
+      <section>
+        <h2>Criar Gênero</h2>
+        <form id="genre-form">
+          <input type="text" id="genre-name" placeholder="Nome do Gênero" required>
+          <button type="submit" class="btn">Criar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="/js/genres.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Faixas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciar Faixas</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/html/artists.html" class="nav-btn">Artistas</a>
+      <a href="/html/albums.html" class="nav-btn">Álbuns</a>
+      <a href="/html/genres.html" class="nav-btn">Gêneros</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-container">
+      <section>
+        <h2>Lista de Faixas</h2>
+        <ul id="track-list"></ul>
+      </section>
+      <section>
+        <h2>Criar Faixa</h2>
+        <form id="track-form">
+          <input type="text" id="track-name" placeholder="Nome da Faixa" required>
+          <select id="album-select" required>
+            <option value="">Selecione o Álbum</option>
+          </select>
+          <input type="number" id="track-duration" placeholder="Duração (minutos)" min="1" required>
+          <button type="submit" class="btn">Criar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="/js/tracks.js"></script>
+</body>
+</html>

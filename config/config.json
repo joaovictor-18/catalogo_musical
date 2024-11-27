@@ -1,0 +1,23 @@
+{
+    "development": {
+      "username": "jvlogs",
+      "password": "jsa181805",
+      "database": "catalog_music",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+  "test": {
+    "username": "jvlogs",
+    "password": "jsa181805",
+    "database": "catalog_music",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "jvlogs",
+    "password": "jsa181805",
+    "database": "catalog_music",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

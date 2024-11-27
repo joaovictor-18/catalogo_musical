@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Artistas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciar Artistas</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/html/albums.html" class="nav-btn">Álbuns</a>
+      <a href="/html/tracks.html" class="nav-btn">Faixas</a>
+      <a href="/html/genres.html" class="nav-btn">Gêneros</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-container">
+      <section>
+        <h2>Lista de Artistas</h2>
+        <ul id="artist-list"></ul>
+      </section>
+      <section>
+        <h2>Criar Artista</h2>
+        <form id="artist-form">
+          <input type="text" id="artist-name" placeholder="Nome do Artista" required>
+          <select id="genre-select" required>
+            <option value="">Selecione o Gênero</option>
+          </select>
+          <button type="submit" class="btn">Criar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="/js/artists.js"></script>
+</body>
+</html>

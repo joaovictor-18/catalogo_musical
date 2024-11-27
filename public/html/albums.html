@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Álbuns</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciar Álbuns</h1>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/html/artists.html" class="nav-btn">Artistas</a>
+      <a href="/html/tracks.html" class="nav-btn">Faixas</a>
+      <a href="/html/genres.html" class="nav-btn">Gêneros</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="content-container">
+      <section>
+        <h2>Lista de Álbuns</h2>
+        <ul id="album-list"></ul>
+      </section>
+      <section>
+        <h2>Criar Álbum</h2>
+        <form id="album-form">
+          <input type="text" id="album-title" placeholder="Título do Álbum" required>
+          <input type="number" id="release-year" placeholder="Ano de Lançamento" required>
+          <select id="artist-select" required>
+            <option value="">Selecione o Artista</option>
+          </select>
+          <button type="submit" class="btn">Criar</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="/js/albums.js"></script>
+</body>
+</html>
